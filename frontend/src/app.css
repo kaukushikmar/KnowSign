@@ -1,0 +1,55 @@
+.token-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.token-image {
+    width: 150px;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.token-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.token-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.token-info h3 {
+    margin-top: 0;
+}
+
+.token-info p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .token-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .token-image {
+        width: auto;
+        order: -1;
+        /* Image on top */
+    }
+
+    .token-info {
+        text-align: center;
+    }
+}
